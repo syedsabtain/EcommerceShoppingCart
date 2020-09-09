@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './Component/App/App';
 import * as serviceWorker from './serviceWorker';
+import './bootstrap.min.css'
+import Finalcomp from './Component/Finalcomp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Finalcomp></Finalcomp>
   </React.StrictMode>,
   document.getElementById('root')
 );
