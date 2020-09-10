@@ -3,10 +3,10 @@
 ## This is project of Software Engineering
 
    This project Is created By 
-   Syed Sabtain 
-   Sohail imam
-   Bilal
-   Farrukh
+   Syed Sabtain, 
+   Sohail imam,
+   Bilal,
+   Farrukh,
 
 ### This project is live
 
