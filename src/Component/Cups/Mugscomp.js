@@ -1,16 +1,27 @@
-import React,{useContext,useState} from 'react'
+import React,{useState} from 'react'
 import mugstore from './mugStore'
-import {gdata} from '../context/Databasee'
+import {useDispatch} from 'react-redux'
+import {addProduct} from '../../Reduxxtool/Slicer/MainSlicer'
 import {Link} from 'react-router-dom'
 
 const Mugs=()=>{
-  const{additem} =useContext(gdata)
+  
   let[count,setCount] = useState(0)
-  let[txt,setTxt]= useState('hidden')
+  
   let[lab,setLab]= useState({})
 
-  let mystyle={visibility:txt};
+  
+  const dispatch = useDispatch()
+  const handleadd=(obj)=>{
 
+    dispatch(addProduct({
+      name:obj.name,
+      image:obj.img,
+      price:obj.price,
+      id:obj.id,
+      count:1
+    }))
+  }
   const updat=(obj)=>
   {   
       setLab({
@@ -21,18 +32,18 @@ const Mugs=()=>{
   }
   const relement =(id)=>
   {
-      if(lab.id==id){
-      return(<span><Link to='../cartitem' className='btn btn-outline-dark ml-3'>View in cart</Link><br/><span className='mt-3 ' >Added to cart</span></span>)
+      if(lab.id===id){
+      return(<span><Link to='../cart' className='btn btn-outline-dark ml-3'>View in cart</Link><br/><span className='mt-3 ml-3' >  Added to cart</span></span>)
       }
       
   }
 
     return(
-        <div className='container mt-5 mt-lg-5'>
+        <div className='container mt-5 mt-lg-5   mugs p-5'>
             <div className='row mt-5 '>
                 
             
-            {Object.entries(mugstore).map(([slug,{name,price,img}],key)=>{
+            {Object.entries(mugstore).map(([slug,{name,price,img,id}],key)=>{
                 return(
 
                     <div className="col-md-4" key={key}>
@@ -42,15 +53,16 @@ const Mugs=()=>{
                         <img src={img} alt="" className='card-img-top cardimage'/>
                
                     <div className="card-body cardbody">
-                      <p className="card-text cardtext btn btn-info"> {name} </p>
-                <p>Price = {price}$</p>
+                      <p className="card-text cardtextp d-flex justify-content-between"> {name} <span className=''>Price = {price}$</span> </p>
+                
                       <div className="d-flex justify-content-between align-items-center">
                         <div className="btn-group">
-                          <button type="button" className="btn btn-outline-danger" onClick={()=>{setCount(++count); additem({name:name,price:price,id:count}); updat(key);}} >Buy</button>
-                          <br/>
+                        <button  className="btn btn-outline-danger" onClick={()=>{setCount(++count); handleadd({name,price,id,img}); updat(key);}} >Buy</button>
+                         
                           {relement(key)}
                   {/* <button type="button" className="btn btn-sm btn-outline-secondary">key = value{key}</button> */}
                         </div>
+                       
                         
                       </div>
                     </div>
@@ -62,6 +74,7 @@ const Mugs=()=>{
                 )
             })}
             </div>
+            
         </div>
     )
 }

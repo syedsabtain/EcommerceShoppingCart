@@ -16,52 +16,62 @@ const mugstore ={
     'CupsandMugs1': {
         name:     'Mug',
         img: image1,
-        price:600
+        price:600,
+        id:0
     },
     'CupsandMugs2': {
         name:     'Mug',
         img: image2,
-        price:600
+        price:234,
+        id:1
     },
     'CupsandMugs3': {
         name:     'Mug',
         img: image3,
-        price:600
+        price:543,
+        id:2
     },
     'CupsandMugs4': {
         name:     'Mug',
         img: image4,
-        price:600
+        price:678,
+        id:3
     },
     'CupsandMugs41': {
         name:     'Mug',
         img: image5,
-        price:600
+        price:765,
+        id:4
     },
     'CupsandMugs5': {
         name:     'Mug',
         img: image6,
-        price:600
+        price:122,
+        id:5
     },
     'CupsandMugs6': {
         name:     'Mug',
         img: image7,
-        price:600
+        price:787,
+        id:6
     },
     'CupsandMugs7': {
         name:     'Mug',
         img: image8,
-        price:600
+        price:987,
+        id:7
     },
     'CupsandMugs8': {
         name:     'Mug',
         img: image9,
-        price:600
+        price:432,
+        id:8
     },
     'CupsandMugs9': {
         name:     'Mug',
         img: image10,
-        price:600
+        price:234,
+        id:9
     },
 
 

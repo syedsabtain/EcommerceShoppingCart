@@ -1,68 +1,79 @@
-import image1 from '../../images/mugs/image1.jpg'
-import image2 from '../../images/mugs/image2.jpg'
-import image3 from '../../images/mugs/image3.jpg'
-import image4 from '../../images/mugs/image4.jpg'
-import image5 from '../../images/mugs/image5.jpg'
-import image6 from '../../images/mugs/image6.jpg'
-import image7 from '../../images/mugs/image7.jpg'
-import image8 from '../../images/mugs/image8.jpg'
-import image9 from '../../images/mugs/image9.jpg'
-import image10 from '../../images/mugs/image10.jpg'
+import image1 from '../../images/accessories/image1.jpg'
+import image2 from '../../images/accessories/image2.jpg'
+import image3 from '../../images/accessories/image3.jpg'
+import image4 from '../../images/accessories/image4.jpg'
+import image5 from '../../images/accessories/image5.jpg'
+import image6 from '../../images/accessories/image6.jpg'
+import image7 from '../../images/accessories/image7.jpg'
+import image8 from '../../images/accessories/image8.jpg'
+import image9 from '../../images/accessories/image9.jpg'
+import image10 from '../../images/accessories/image10.jpg'
 
 
 
-const mugstore ={
-
-    'Accessories': {
-        name:     'Accessories',
+const store ={
+    'CupsandMugs1': {
+        name:     'accessories',
         img: image1,
-        price:600
+        price:600,
+        id:20
     },
-    'Accessories': {
-        name:     'Accessories',
+    'CupsandMugs2': {
+        name:     'accessories',
         img: image2,
-        price:600
+        price:234,
+        id:21
     },
-    'Accessories': {
-        name:     'Accessories',
+    'CupsandMugs3': {
+        name:     'accessories',
         img: image3,
-        price:600
+        price:543,
+        id:22
     },
-    'Accessories': {
-        name:     'Accessories',
+    'CupsandMugs4': {
+        name:     'accessories',
         img: image4,
-        price:600
+        price:678,
+        id:23
     },
-    'Accessories': {
-        name:     'Accessories',
+    'CupsandMugs41': {
+        name:     'accessories',
         img: image5,
-        price:600
+        price:765,
+        id:24
     },
-    'Accessories': {
-        name:     'Accessories',
+    'CupsandMugs5': {
+        name:     'accessories',
         img: image6,
-        price:600
+        price:122,
+        id:25
     },
-    'Accessories': {
-        name:     'Accessories',
+    'CupsandMugs6': {
+        name:     'accessories',
         img: image7,
-        price:600
+        price:787,
+        id:26
     },
-    'Accessories': {
-        name:     'Accessories',
+    'CupsandMugs7': {
+        name:     'accessories',
         img: image8,
-        price:600
+        price:987,
+        id:27
     },
-    'Accessories': {
-        name:     'Accessories',
+    'CupsandMugs8': {
+        name:     'accessories',
         img: image9,
-        price:600
+        price:432,
+        id:28
     },
-    'Accessories': {
-        name:     'Accessories',
+    'CupsandMugs9': {
+        name:     'accessories',
         img: image10,
-        price:600
+        price:234,
+        id:29
     },
 
 
 }
+
+export default store

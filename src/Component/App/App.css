@@ -70,6 +70,11 @@
   color: black!important;
   font-size: 24px!important;
 }
+.cardtextp{
+  text-shadow: 2px 2px 8px white!important;
+  color: black!important;
+  /* font-size: 24px!important; */
+}
 @media only screen and (max-width: 600px) {
   .cardimage {
     height: 100%;
@@ -78,7 +83,14 @@
 .cardimage{
   height: 250px;
 }
+/* .mugs{
 
+  background-image: url('../../images/background/image2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+} */
 /* this from this side */
 /* .bg-ad{
   box-sizing: border-box;

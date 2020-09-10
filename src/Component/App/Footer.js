@@ -7,7 +7,7 @@ const Footer =()=>{
 
         <footer className="container">
                     <p className="float-right">
-                        <a href="#">Back to top</a>
+                        <a href=".navbar">Back to top</a>
                     </p>
                    
                     <div>
@@ -26,7 +26,7 @@ const Footer =()=>{
         {/* <!-- Content --> */}
         <h6 className="text-uppercase font-weight-bold">Heart Of Pottery</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
-        <p>Heart Of Pottery is the main store where you can find every pottery handmade by one of our finiest artist</p>
+        <p>Heart Of Pottery is the main store where you can find every pottery handmade by one of our finest artist</p>
 
       </div>
       {/* <!-- Grid column --> */}
@@ -38,16 +38,22 @@ const Footer =()=>{
         <h6 className="text-uppercase font-weight-bold">Category</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
         <p>
-          <a href="#!">Cups & Mugs</a>
+          <Link to='Mugs' >Cups & Mugs</Link>
         </p>
         <p>
-          <a href="#!">Plates</a>
+          <Link to='Plates'>Plates</Link>
         </p>
         <p>
-          <a href="#!">Bowls</a>
+          <Link to='Bowls'>Bowls</Link>
         </p>
         <p>
-          <a href="#!">Unique Pieces</a>
+          <Link to='UniquePiecies'>Unique Pieces</Link>
+        </p>
+        <p>
+          <Link to='Accessories'>Accessories</Link>
+        </p>
+        <p>
+          <Link to='Dinner'>Dinner Sets</Link>
         </p>
 
       </div>
@@ -60,16 +66,16 @@ const Footer =()=>{
         <h6 className="text-uppercase font-weight-bold">Useful links</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
         <p>
-          <a href="#!">Your Account</a>
+          <a href=".navbar">Your Account</a>
         </p>
         <p>
-          <a href="#!">Become an Affiliate</a>
+          <a href=".navbar">Become an Affiliate</a>
         </p>
         <p>
-          <a href="#!">Shipping Rates</a>
+          <a href=".navbar">Shipping Rates</a>
         </p>
         <p>
-          <a href="#!">Help</a>
+          <a href=".navbar">Help</a>
         </p>
 
       </div>
@@ -105,7 +111,7 @@ const Footer =()=>{
         © 2020 <a href="/" title="">Heart Of Pottery</a>.
         
         
-        <a href='#'>Created by (Syed Sabtain, sheikh sohail, bilal , farrukh)</a>
+        <a href='.navbar'>Created by (Syed Sabtain, sheikh sohail, bilal , farrukh)</a>
       </p>
       
         <div className="payment_methods">

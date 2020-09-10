@@ -3,14 +3,21 @@ import React from 'react';
 
 
 import './App.css'
-import Mug from '../Cups/Mugscomp'
+
 import Maincomp from './Main'
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Headercomp from './Header'
 import Footercomp from './Footer'
 import Mugs from '../Cups/Mugscomp'
-import Cartitem from '../context/Cartitem'
-import Checkout from '../context/Checkout';
+
+
+import Cartcomp from '../Cart/Cartcomp'
+import Platescomp from '../Plates/Platescomp';
+import Accessories from '../Accessories/Accessories'
+import Dinner from '../Dinner/Dinnercomp';
+import Bowls from '../Bowls/Bowlscomp';
+import Unique from '../Unique/Uniquecomp';
+import Checkout from '../Cart/Checkout'
 function App() {
    
     return (
@@ -25,8 +32,17 @@ function App() {
                <Routes>
                  <Route  path='/' element={<Maincomp></Maincomp>}></Route>
                  <Route  path='Mugs' element={<Mugs></Mugs>}></Route>
-                 <Route  path='cartitem' element={<Cartitem></Cartitem>}></Route>
-                 <Route path='checkout'  element={<Checkout></Checkout>}></Route>
+                 
+                 
+                 <Route path='cart' element={<Cartcomp></Cartcomp>}></Route>
+                 <Route path='Plates' element={<Platescomp></Platescomp>}></Route>
+                 <Route path='Accessories' element={<Accessories></Accessories>}></Route>
+                 <Route path='Dinner' element={<Dinner></Dinner>}></Route>
+                 <Route path='Bowls' element={<Bowls></Bowls>}></Route>
+                 <Route path='UniquePiecies' element={<Unique></Unique>}></Route>
+                 <Route path='Checkout' element={<Checkout></Checkout>}></Route>
+
+                 
                </Routes>
          
       

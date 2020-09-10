@@ -4,10 +4,11 @@ import img1 from '../../images/slider/image1.jpg'
 import img2 from '../../images/slider/image2.jpg'
 import img3 from '../../images/slider/image3.jpg'
 import img4 from '../../images/slider/image4.jpg'
+import img6 from '../../images/slider/image6.jpg'
+import img7 from '../../images/slider/image7.jpg'
 import {useSpring, animated} from 'react-spring'
 import MainCategory from '../../Store/mainStore'
-import logo from '../../logo.png'
-import logo2 from '../../images/logo2.png'
+
 import resturant from '../../images/slider/resturant.jpg'
 import heart from '../../images/background/image4.png'
 import './App.css'
@@ -48,9 +49,7 @@ const trans5 = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg
 const transarray = [trans0,trans1,trans2,trans3,trans4,trans5]
 const Main =()=>
 {
-    const slide1 = img1;
-    const slide2 = img2
-    const slide3 = img3;
+  
     const [props,
         set] = useSpring(() => ({
         xys: [
@@ -119,6 +118,7 @@ const [props5,
 }))
 const propsarray = [props,props1,props2,props3,props4,props5,]
 const setarray=[set,set1,set2,set3,set4,set5]
+const linkarry = ['Accessories','Bowls','Mugs','Dinner','Plates','UniquePiecies']
     return(
 
 
@@ -137,14 +137,23 @@ const setarray=[set,set1,set2,set3,set4,set5]
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={slide1} className="d-block w-100" alt="..."/>
+                            <img src={img1} className="d-block w-100" alt="..."/>
                             
                         </div>
                         <div className="carousel-item">
-                            <img src={slide2} className="d-block w-100" alt="..."/>
+                            <img src={img2} className="d-block w-100" alt="..."/>
                         </div>
                         <div className="carousel-item">
-                            <img src={slide3} className="d-block w-100" alt="..."/>
+                            <img src={img3} className="d-block w-100" alt="..."/>
+                        </div>
+                        <div className="carousel-item">
+                            <img src={img4} className="d-block w-100" alt="..."/>
+                        </div>
+                        <div className="carousel-item">
+                            <img src={img6} className="d-block w-100" alt="..."/>
+                        </div>
+                        <div className="carousel-item">
+                            <img src={img7} className="d-block w-100" alt="..."/>
                         </div>
                     </div>
                     <a
@@ -185,10 +194,10 @@ const setarray=[set,set1,set2,set3,set4,set5]
                 <img src={img} alt="" className='card-img-top'/>
             </animated.div>
             <div className="card-body cardbody">
-              <button className="card-text cardtext btn btn-info">{name}</button>
+              <Link to={linkarry[key]} className="card-text cardtext btn btn-info">{name}</Link>
               <div className="d-flex justify-content-between align-items-center">
                 <div className="btn-group">
-                  {/* <button type="button" className="btn btn-sm btn-outline-secondary">View</button> */}
+                  {/* <Link to={linkarry[key]} className="btn btn-sm btn-outline-secondary">View</Link> */}
           {/* <button type="button" className="btn btn-sm btn-outline-secondary">key = value{key}</button> */}
                 </div>
                 
@@ -224,12 +233,15 @@ const setarray=[set,set1,set2,set3,set4,set5]
                 </div>
                 </div>
                 <section className="jumbotron  text-center heart">
-    <div className="container fornav ">
-      <h1>Album example</h1>
-      <p className="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+    <div className="container fornav mt-5 mb-5">
+      <h1 className='mt-5'>Heart Of Pottery</h1>
+      <h3 className="lead ">We Have One of the best pottery artist in the World.
+      </h3>
+      <p className='lead'> Every pottery is Handmade 100% and</p>
+      <p className='lead mb-5'> we use one of the best Quality Material. its a Brand that Everyone recognise</p>
       <p>
-        <a href="#" className="btn btn-primary my-2">Main call to action</a>
-        <a href="#" className="btn btn-secondary my-2">Secondary action</a>
+        {/* <a href="#" className="btn btn-primary my-2">Main call to action</a>
+        <a href="#" className="btn btn-secondary my-2">Secondary action</a> */}
       </p>
     </div>
   </section>
@@ -240,9 +252,9 @@ const setarray=[set,set1,set2,set3,set4,set5]
       </div>
       <div className='col-md-4 d-flex align-items-center'>
          <div>
-           <h2>Our New Gift Card</h2>
+           <h2>Buy Gift For Your Loved Ones</h2>
            <p>Perfect for birthdays, weddings, housewarming, or just as a small surprise...</p>
-           <button className='btn btn-outline-danger'>Gift Card</button>
+           <button className='btn btn-outline-danger'>Go Shopping</button>
          </div>
       </div>
     </div>
