@@ -55,7 +55,12 @@
   will-change: transform;
   border: 15px solid white;
 }
-
+.viewimage{
+  /* margin-top: 100px!important; */
+}
+.contact{
+  margin-top: 94px!important;
+}
 .card:hover {
   /* width: 45ch; */
   /* height: 45ch; */

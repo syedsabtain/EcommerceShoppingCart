@@ -18,6 +18,8 @@ import Dinner from '../Dinner/Dinnercomp';
 import Bowls from '../Bowls/Bowlscomp';
 import Unique from '../Unique/Uniquecomp';
 import Checkout from '../Cart/Checkout'
+import Viewimage from '../Viewimage/Viewimage';
+import Contact from '../Contact/contact';
 function App() {
    
     return (
@@ -31,8 +33,8 @@ function App() {
                
                <Routes>
                  <Route  path='/' element={<Maincomp></Maincomp>}></Route>
-                 <Route  path='Mugs' element={<Mugs></Mugs>}></Route>
-                 
+                 <Route  path='Mugs' element={<Mugs></Mugs>}> </Route>
+                 <Route path=':slug' element={<Viewimage></Viewimage>}></Route>
                  
                  <Route path='cart' element={<Cartcomp></Cartcomp>}></Route>
                  <Route path='Plates' element={<Platescomp></Platescomp>}></Route>
@@ -41,6 +43,9 @@ function App() {
                  <Route path='Bowls' element={<Bowls></Bowls>}></Route>
                  <Route path='UniquePiecies' element={<Unique></Unique>}></Route>
                  <Route path='Checkout' element={<Checkout></Checkout>}></Route>
+                 <Route path='Contact' element={<Contact></Contact>}></Route>
+                 
+
 
                  
                </Routes>

@@ -12,65 +12,75 @@ import image10 from '../../images/accessories/image10.jpg'
 
 
 const store ={
-    'CupsandMugs1': {
-        name:     'accessories',
+    'small bowl blue 2': {
+        name:     'Small bowl blue',
         img: image1,
         price:600,
-        id:20
+        id:20,
+        count:1
     },
-    'CupsandMugs2': {
-        name:     'accessories',
+    'small bowl green 2' : {
+        name:     'Small bowl green',
         img: image2,
         price:234,
-        id:21
+        id:21,
+        count:1
     },
-    'CupsandMugs3': {
-        name:     'accessories',
+    'Suger bowl & milk jug blue 2': {
+        name:     'Suger bowl & milk jug blue',
         img: image3,
         price:543,
-        id:22
+        id:22,
+        count:1
     },
-    'CupsandMugs4': {
-        name:     'accessories',
+    'Jug or Sauce boat 2': {
+        name:     'Jug or Sauce boat',
         img: image4,
         price:678,
-        id:23
+        id:23,
+        count:1
     },
-    'CupsandMugs41': {
-        name:     'accessories',
+    'Small bowl with spoon 2' : {
+        name:     'Small bowl with spoon',
         img: image5,
         price:765,
-        id:24
+        id:24,
+        count:1
     },
-    'CupsandMugs5': {
-        name:     'accessories',
+    'Heart shaped bowl Red 2': {
+        name:     'Heart shaped bowl Red',
         img: image6,
         price:122,
-        id:25
+        id:25,
+        count:1
     },
-    'CupsandMugs6': {
-        name:     'accessories',
+    'Suger bowl & milk jug red 2': {
+        name:     'Suger bowl & milk jug red',
         img: image7,
         price:787,
-        id:26
+        id:26,
+        count:1
     },
-    'CupsandMugs7': {
-        name:     'accessories',
+    'Bowl red 2': {
+        name:     'Bowl red',
         img: image8,
         price:987,
-        id:27
+        id:27,
+        count:1
     },
-    'CupsandMugs8': {
-        name:     'accessories',
+    'Suger bowl & milk jug blue 8': {
+        name:     'Suger bowl & milk jug red',
         img: image9,
         price:432,
-        id:28
+        id:28,
+        count:1
     },
-    'CupsandMugs9': {
-        name:     'accessories',
+    'Heart shaped bowl Blue 2': {
+        name:     'Heart shaped bowl Blue',
         img: image10,
         price:234,
-        id:29
+        id:29,
+        count:1
     },
 
 

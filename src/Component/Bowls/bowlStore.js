@@ -13,65 +13,75 @@ import image10 from '../../images/bowl/image10.jpg'
 
 const store ={
 
-    'CupsandMugs1': {
-        name:     'Bowls',
+    'Large nesting bowl red 4': {
+        name:     'Large nesting bowl red',
         img: image1,
         price:600,
-        id:40
+        id:40,
+        count:1
     },
-    'CupsandMugs2': {
-        name:     'Bowls',
+    'Soup bowl brown 4': {
+        name:     'Soup bowl brown',
         img: image2,
         price:234,
-        id:41
+        id:41,
+        count:1
     },
-    'CupsandMugs3': {
-        name:     'Bowls',
+    'Soup bowl black-pattern 4': {
+        name:     'Soup bowl black-pattern',
         img: image3,
         price:543,
-        id:42
+        id:42,
+        count:1
     },
-    'CupsandMugs4': {
-        name:     'Bowls',
+    'Small Bowl blue 4': {
+        name:     'Small Bowl blue',
         img: image4,
         price:678,
-        id:43
+        id:43,
+        count:1
     },
-    'CupsandMugs41': {
-        name:     'Bowls',
+    'Bowl ancient-design 4': {
+        name:     'Bowl ancient-design',
         img: image5,
         price:765,
-        id:44
+        id:44,
+        count:1
     },
-    'CupsandMugs5': {
-        name:     'Bowls',
+    'Bowl blue-pattern 4': {
+        name:     'Bowl blue-pattern',
         img: image6,
         price:122,
-        id:45
+        id:45,
+        count:1
     },
-    'CupsandMugs6': {
-        name:     'Bowls',
+    'Large oval bowl blue 4': {
+        name:     'Large oval bowl blue',
         img: image7,
         price:787,
-        id:46
+        id:46,
+        count:1
     },
-    'CupsandMugs7': {
-        name:     'Bowls',
+    'Large Soup bowl blue 4': {
+        name:     'Large Soup bowl blue',
         img: image8,
         price:987,
-        id:47
+        id:47,
+        count:1
     },
-    'CupsandMugs8': {
-        name:     'Bowls',
+    'Large Soup bowl white 4': {
+        name:     'Large Soup bowl white',
         img: image9,
         price:432,
-        id:48
+        id:48,
+        count:1
     },
-    'CupsandMugs9': {
-        name:     'Bowls',
+    'Soup bowl clay 4': {
+        name:     'Soup bowl clay',
         img: image10,
         price:234,
-        id:49
+        id:49,
+        count:1
     },
 
 

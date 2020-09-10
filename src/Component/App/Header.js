@@ -18,8 +18,8 @@ const Header =()=>{
                 aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse " id="navbarCollapse">
-                <ul className="navbar-nav mr-auto ">
+            <div className="collapse navbar-collapse ml-5 " id="navbarCollapse">
+                <ul className="navbar-nav mr-auto ml-5">
                     <li className="nav-item  ">
                         <Link className="nav-link fornav " to='/'>Home
                             
@@ -27,7 +27,7 @@ const Header =()=>{
                     </li>
                     
                     <li className="nav-item dropdown ">
-<a className="nav-link dropdown-toggle fornav" href=".navbar" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<a className="nav-link dropdown-toggle fornav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Category
 </a>
 <div className="dropdown-menu " aria-labelledby="navbarDropdown">
@@ -40,6 +40,11 @@ Category
   <Link className="dropdown-item " to='UniquePiecies'>Unique Piece</Link>
 </div>
 </li>
+<li className="nav-item  ">
+                        <Link className="nav-link fornav " to='Contact'>Contact
+                            
+                        </Link>
+                    </li>
 <li className="nav-item d-flex float-right">
                         <Link className="nav-link fornav" to='cart'>Cart<span className="badge badge-secondary badge-pill">{Object.keys(value).length}</span>
                             

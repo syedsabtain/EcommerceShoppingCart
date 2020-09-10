@@ -9,69 +9,79 @@ import image8 from '../../images/mugs/image8.jpg'
 import image9 from '../../images/mugs/image9.jpg'
 import image10 from '../../images/mugs/image10.jpg'
 
-
+// Espresso cups with saucer
 
 const mugstore ={
 
-    'CupsandMugs1': {
-        name:     'Mug',
+    'Tea-Cup blue 0': {
+        name:     'Tea-Cup blue ',
         img: image1,
         price:600,
-        id:0
+        id:0,
+        count:1
     },
-    'CupsandMugs2': {
-        name:     'Mug',
+    'Espresso cup red 0': {
+        name:     'Espresso cup red ',
         img: image2,
         price:234,
-        id:1
+        id:1,
+        count:1
     },
-    'CupsandMugs3': {
-        name:     'Mug',
+    'Tea-Cup white 0': {
+        name:     'Tea-Cup white',
         img: image3,
         price:543,
-        id:2
+        id:2,
+        count:1
     },
-    'CupsandMugs4': {
-        name:     'Mug',
+    'Espresso cup green': {
+        name:     'Espresso cup green',
         img: image4,
         price:678,
-        id:3
+        id:3,
+        count:1
     },
-    'CupsandMugs41': {
-        name:     'Mug',
+    'Espresso cup blue': {
+        name:     'Espresso cup blue',
         img: image5,
         price:765,
-        id:4
+        id:4,
+        count:1
     },
-    'CupsandMugs5': {
-        name:     'Mug',
+    'Tea-Cup meraish 0': {
+        name:     'Tea-Cup meraish',
         img: image6,
         price:122,
-        id:5
+        id:5,
+        count:1
     },
-    'CupsandMugs6': {
-        name:     'Mug',
+    'Mug green 0': {
+        name:     'Mug green',
         img: image7,
         price:787,
-        id:6
+        id:6,
+        count:1
     },
-    'CupsandMugs7': {
-        name:     'Mug',
+    'Tea-Cup red 0': {
+        name:     'Tea-Cup red',
         img: image8,
         price:987,
-        id:7
+        id:7,
+        count:1
     },
-    'CupsandMugs8': {
-        name:     'Mug',
+    'Tea-Cup seasish 0': {
+        name:     'Tea-Cup seasish',
         img: image9,
         price:432,
-        id:8
+        id:8,
+        count:1
     },
-    'CupsandMugs9': {
-        name:     'Mug',
+    'Mug blue 0': {
+        name:     'Mug blue',
         img: image10,
         price:234,
-        id:9
+        id:9,
+        count:1
     },
 
 

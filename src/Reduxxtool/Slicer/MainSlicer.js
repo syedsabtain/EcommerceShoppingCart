@@ -42,14 +42,35 @@ const Mainslice = createSlice({
                 if(value)
                 { 
                   
-                    value.count = action.payload.count
+                    value.count++
                     
                
                 }
+
+            
+        },
+        removeProduct:(state,action)=>{
+            let value = state.find((val)=> val.id === action.payload.obj);
+                
+                console.log(action.payload)
+                   
+                if(value)
+                { 
+                  
+                    if(value.count>0)
+                    {value.count--}
+                    
+               
+                }
+    
+            
         }
         
     }
+    
+
+
 })
 
 export const ProductReducer = Mainslice.reducer;
-export const {addProduct,deleteProduct,updateProduct} = Mainslice.actions
+export const {addProduct,deleteProduct,updateProduct,removeProduct} = Mainslice.actions

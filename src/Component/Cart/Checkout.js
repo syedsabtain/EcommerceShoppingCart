@@ -16,6 +16,10 @@ const Checkout =()=>
         }
         return total+50
     }
+    const  numberWithCommas=(x)=> {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+  
     return(
     
         <div className="container mt-5 bg-checkout p-5">
@@ -37,7 +41,7 @@ const Checkout =()=>
               <h6 className="my-0">{product.name.replace(/-/g,' ').toUpperCase()}</h6>
               <small className="text-muted">Quantity = {product.count}</small>
                   </div>
-              <span className="text-muted">${product.price*product.count}</span>
+              <span className="text-muted">${numberWithCommas(product.price*product.count )}</span>
                 </li>
               )})}
               
@@ -45,7 +49,7 @@ const Checkout =()=>
               
               <li className="list-group-item d-flex justify-content-between">
                 <span>Total (USD)</span>
-              <strong>${calculatetotal()}</strong>
+              <strong>${numberWithCommas(calculatetotal())}</strong>
               </li>
             </ul>
   

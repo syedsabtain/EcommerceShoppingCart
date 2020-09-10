@@ -7,34 +7,26 @@ const Footer =()=>{
 
         <footer className="container">
                     <p className="float-right">
-                        <a href=".navbar">Back to top</a>
+                        <a href="#">Back to top</a>
                     </p>
                    
                     <div>
                     <div className="footer  mb-5">
-                 {/* it will come here */}
-
-  {/* <!-- Footer Links --> */}
+                 
   <div className="container text-center text-md-left mt-5">
 
-    {/* <!-- Grid row --> */}
     <div className="row mt-3">
 
-      {/* <!-- Grid column --> */}
       <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
-        {/* <!-- Content --> */}
         <h6 className="text-uppercase font-weight-bold">Heart Of Pottery</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
         <p>Heart Of Pottery is the main store where you can find every pottery handmade by one of our finest artist</p>
 
       </div>
-      {/* <!-- Grid column --> */}
 
-      {/* <!-- Grid column --> */}
       <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
-        {/* <!-- Links --> */}
         <h6 className="text-uppercase font-weight-bold">Category</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
         <p>
@@ -57,50 +49,42 @@ const Footer =()=>{
         </p>
 
       </div>
-      {/* <!-- Grid column --> */}
 
-      {/* <!-- Grid column --> */}
       <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
-        {/* <!-- Links --> */}
         <h6 className="text-uppercase font-weight-bold">Useful links</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
         <p>
-          <a href=".navbar">Your Account</a>
+          <a href="#">Your Account</a>
         </p>
         <p>
-          <a href=".navbar">Become an Affiliate</a>
+          <a href="#">Become an Affiliate</a>
         </p>
         <p>
-          <a href=".navbar">Shipping Rates</a>
+          <a href="#">Shipping Rates</a>
         </p>
         <p>
-          <a href=".navbar">Help</a>
+          <a href="#">Help</a>
         </p>
 
       </div>
-      {/* <!-- Grid column --> */}
 
-      {/* <!-- Grid column --> */}
       <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
-        {/* <!-- Links --> */}
         <h6 className="text-uppercase font-weight-bold">Contact</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
         <p>
-          <i className="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          <i className="fas fa-home mr-3"></i> Heart Of pottery opposite national Measume karachi Pakistan</p>
         <p>
-          <i className="fas fa-envelope mr-3"></i> info@example.com</p>
+          <i className="fas fa-envelope mr-3"></i> info@Heartofpottery.com</p>
         <p>
           <i className="fas fa-phone mr-3"></i> + 01 234 567 88</p>
         <p>
           <i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
 
       </div>
-      {/* <!-- Grid column --> */}
 
     </div>
-    {/* <!-- Grid row --> */}
 
   </div>
 
@@ -111,7 +95,7 @@ const Footer =()=>{
         © 2020 <a href="/" title="">Heart Of Pottery</a>.
         
         
-        <a href='.navbar'>Created by (Syed Sabtain, sheikh sohail, bilal , farrukh)</a>
+        <a href='#'>Created by (Syed Sabtain, sheikh sohail, bilal , farrukh)</a>
       </p>
       
         <div className="payment_methods">

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector ,useDispatch} from 'react-redux'
 import {Link} from 'react-router-dom'
-import  {deleteProduct,updateProduct} from '../../Reduxxtool/Slicer/MainSlicer'
+import  {deleteProduct,updateProduct,removeProduct} from '../../Reduxxtool/Slicer/MainSlicer'
 import './cartstyle.css'
 const Cartcomp =()=>{
 
@@ -9,7 +9,7 @@ const Cartcomp =()=>{
     const dispatch = useDispatch();
     
     
-    let count = 1;
+    
 
     const handledelete=(obj)=>{
 
@@ -25,30 +25,21 @@ const Cartcomp =()=>{
     }
 
     const handlePlus=(obj)=>{
-     
-        for (let i = 0; i < value.length; i++) {
-            count =value[i].count + 1
-            
-        }
         
-        const data = {obj,count}
+        
+        const data = {obj}
         dispatch(updateProduct(data))
     }
     const handleMinus=(obj)=>{
-       
         
-        for (let i = 0; i < value.length; i++) {
-            if(value[i].count>0)
-            {count=value[i].count - 1}
-            else if(value[i].count===0)
-            {}
-           
-       }
        
-       const data = {obj,count}
-       dispatch(updateProduct(data))
+       const data = {obj}
+       dispatch(removeProduct(data))
        
     }
+    const  numberWithCommas=(x)=> {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      }
     
     return(
 
@@ -74,8 +65,12 @@ const Cartcomp =()=>{
                             <td><img src={val.image} className='cartimage' alt='cardimage'/> </td>
                             <td>{val.name}</td>
                             <td>In stock</td>
-                            <td ><button  onClick={()=>handleMinus(val.id)}>-</button>{val.count}<button onClick={()=>handlePlus(val.id)}>+</button></td>
-                            <td class="text-right">{val.price*val.count} $</td>
+                            <td ><div className='row text-center'>
+                            <div className='col-md-12'>
+                            <button className='btn btn-sm btn-outline-info' onClick={()=>handleMinus(val.id)}>-</button> {val.count} <button className='btn btn-sm btn-outline-info' onClick={()=>handlePlus(val.id)}>+</button>
+                            </div>
+                            </div></td>
+                            <td class="text-right">{numberWithCommas(val.price*val.count)} $</td>
                             <td class="text-right"><button class="btn btn-sm btn-danger" onClick={()=>handledelete(val.id)}><i class="fa fa-trash"></i> X</button> </td>
                         </tr>
                             )
@@ -87,7 +82,7 @@ const Cartcomp =()=>{
                             <td></td>
                             <td></td>
                             <td>Sub-Total</td>
-                            <td class="text-right">{Subtotal()} $</td>
+                            <td class="text-right">{numberWithCommas(Subtotal())} $</td>
                         </tr>
                         <tr>
                             <td></td>
@@ -103,7 +98,7 @@ const Cartcomp =()=>{
                             <td></td>
                             <td></td>
                             <td><strong>Total</strong></td>
-                            <td class="text-right"><strong>{Subtotal()+50} $</strong></td>
+                            <td class="text-right"><strong>{numberWithCommas(Subtotal()+50)} $</strong></td>
                         </tr>
                     </tbody>
                 </table>

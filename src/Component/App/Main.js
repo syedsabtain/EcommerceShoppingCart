@@ -134,6 +134,9 @@ const linkarry = ['Accessories','Bowls','Mugs','Dinner','Plates','UniquePiecies'
                             className="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
@@ -193,7 +196,7 @@ const linkarry = ['Accessories','Bowls','Mugs','Dinner','Plates','UniquePiecies'
                >
                 <img src={img} alt="" className='card-img-top'/>
             </animated.div>
-            <div className="card-body cardbody">
+            <div className="card-body cardbody text-center">
               <Link to={linkarry[key]} className="card-text cardtext btn btn-info">{name}</Link>
               <div className="d-flex justify-content-between align-items-center">
                 <div className="btn-group">
@@ -226,7 +229,7 @@ const linkarry = ['Accessories','Bowls','Mugs','Dinner','Plates','UniquePiecies'
                      <div className='ml-5 pl-5'>
                      <h2>Resturants</h2>
                      <p>Are you a chef, interested in my ceramics?</p>
-                     <button className='btn btn-outline-info'>Contact Me</button>
+                     <Link to='Contact' className='btn btn-outline-info'>Contact Me</Link>
                      </div>
                   </div>
                   
@@ -254,7 +257,7 @@ const linkarry = ['Accessories','Bowls','Mugs','Dinner','Plates','UniquePiecies'
          <div>
            <h2>Buy Gift For Your Loved Ones</h2>
            <p>Perfect for birthdays, weddings, housewarming, or just as a small surprise...</p>
-           <button className='btn btn-outline-danger'>Go Shopping</button>
+           <Link className='btn btn-outline-danger' to='Mugs'>Go Shopping</Link>
          </div>
       </div>
     </div>

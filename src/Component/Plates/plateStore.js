@@ -13,65 +13,74 @@ import image10 from '../../images/Pottery Plate/image10.jpg'
 
 const store ={
 
-    'CupsandMugs1': {
-        name:     'Plate',
+    'Large Oval Plate red 1': {
+        name:     'Large Oval Plate red',
         img: image1,
         price:600,
-        id:10
+        id:10,
+        count:1
     },
-    'CupsandMugs2': {
-        name:     'Plate',
+    'Lunch Plate offwhite 1': {
+        name:     'Lunch Plate offwhite',
         img: image2,
         price:234,
-        id:11
+        id:11,
+        count:1
     },
-    'CupsandMugs3': {
-        name:     'Plate',
+    'Dinner Plate White 1': {
+        name:     'Dinner Plate White',
         img: image3,
         price:543,
-        id:12
+        id:12,
+        count:1
     },
-    'CupsandMugs4': {
-        name:     'Plate',
+    'Lunch Plate White 1': {
+        name:     'Lunch Plate White ',
         img: image4,
         price:678,
-        id:13
+        id:13,
+        count:1
     },
-    'CupsandMugs41': {
-        name:     'Plate',
+    'Dinner Plate red 1': {
+        name:     'Dinner Plate red',
         img: image5,
         price:765,
-        id:14
+        id:14,
+        count:1
     },
-    'CupsandMugs5': {
-        name:     'Plate',
+    'Dinner Plate Design white 1': {
+        name:     'Dinner Plate Design white',
         img: image6,
         price:122,
-        id:15
+        id:15,
+        count:1
     },
-    'CupsandMugs6': {
-        name:     'Plate',
+    'Lunch Plate blue 1': {
+        name:     'Lunch Plate blue 1',
         img: image7,
         price:787,
         id:16
     },
-    'CupsandMugs7': {
-        name:     'Plate',
+    'Lunch Plate red 1': {
+        name:     'Lunch Plate red',
         img: image8,
         price:987,
-        id:17
+        id:17,
+        count:1
     },
-    'CupsandMugs8': {
-        name:     'Plate',
+    'Dinner Plate blue 1': {
+        name:     'Dinner Plate blue ',
         img: image9,
         price:432,
-        id:18
+        id:18,
+        count:1
     },
-    'CupsandMugs9': {
-        name:     'Plate',
+    'Dinner Plate Black 1 ': {
+        name:     'Dinner Plate black   ',
         img: image10,
         price:234,
-        id:19
+        id:19,
+        count:1
     },
 
 

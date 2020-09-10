@@ -13,65 +13,75 @@ import image10 from '../../images/dinner/image10.jpg'
 
 const store ={
 
-    'CupsandMugs1': {
-        name:     'dinner',
+    'Dinner set Harmony  3': {
+        name:     'Dinner set Harmony',
         img: image1,
         price:600,
-        id:30
+        id:30,
+        count:1
     },
-    'CupsandMugs2': {
-        name:     'dinner',
+    'Dinner set Prescense 3': {
+        name:     'Dinner set Prescense',
         img: image2,
         price:234,
-        id:31
+        id:31,
+        count:1
     },
-    'CupsandMugs3': {
-        name:     'dinner',
+    'Dinner set Contrast 3': {
+        name:     'Dinner set Contrast',
         img: image3,
         price:543,
-        id:32
+        id:32,
+        count:1
     },
-    'CupsandMugs4': {
-        name:     'dinner',
+    'Dinner set Rocky Contrast 3': {
+        name:     'Dinner set Rocky Contrast',
         img: image4,
         price:678,
-        id:33
+        id:33,
+        count:1
     },
-    'CupsandMugs41': {
-        name:     'dinner',
+    'Dinner set 3': {
+        name:     'Dinner set ',
         img: image5,
         price:765,
-        id:34
+        id:34,
+        count:1
     },
-    'CupsandMugs5': {
-        name:     'dinner',
+    'Dinner Plate red 3': {
+        name:     'Dinner Plate red',
         img: image6,
         price:122,
-        id:35
+        id:35,
+        count:1
     },
-    'CupsandMugs6': {
-        name:     'dinner',
+    'Dinner set Rocky ': {
+        name:     'Dinner set Rocky ',
         img: image7,
         price:787,
-        id:36
+        id:36,
+        count:1
     },
-    'CupsandMugs7': {
-        name:     'dinner',
+    'Dinner 6-set Rocky  3': {
+        name:     'Dinner 6-set Rocky ',
         img: image8,
         price:987,
-        id:37
+        id:37,
+        count:1
     },
-    'CupsandMugs8': {
-        name:     'dinner',
+    'Dinner set red 3': {
+        name:     'Dinner set red',
         img: image9,
         price:432,
-        id:38
+        id:38,
+        count:1
     },
-    'CupsandMugs9': {
-        name:     'dinner',
+    'Dinner complete-set 3': {
+        name:     'Dinner complete-set',
         img: image10,
         price:234,
-        id:39
+        id:39,
+        count:1
     },
 
 

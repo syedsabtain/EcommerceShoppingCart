@@ -13,65 +13,75 @@ import image10 from '../../images/unique/image10.jpg'
 
 const store ={
 
-    'CupsandMugs1': {
-        name:     'Unique Pieces',
+    'Ceramic Vase Vines 6': {
+        name:     'Ceramic Vase Vines',
         img: image1,
         price:600,
-        id:60
+        id:60,
+        count:1
     },
-    'CupsandMugs2': {
-        name:     'Unique Pieces',
+    'Sky Blue Bowl  6': {
+        name:     'Sky Blue Bowl',
         img: image2,
         price:234,
-        id:61
+        id:61,
+        count:1
     },
-    'CupsandMugs3': {
-        name:     'Unique Pieces',
+    'Unique Chiness 6': {
+        name:     'Unique Chiness',
         img: image3,
         price:543,
-        id:62
+        id:62,
+        count:1
     },
-    'CupsandMugs4': {
-        name:     'Unique Pieces',
+    'Stepping stone bowl 6': {
+        name:     'Stepping stone bowl',
         img: image4,
         price:678,
-        id:63
+        id:63,
+        count:1
     },
-    'CupsandMugs41': {
-        name:     'Unique Pieces',
+    'Ceramic-Porcelain 6': {
+        name:     'Ceramic Porcelain',
         img: image5,
         price:765,
-        id:64
+        id:64,
+        count:1
     },
-    'CupsandMugs5': {
-        name:     'Unique Pieces',
+    'Unique Bowls Fieshish 6': {
+        name:     'Unique Bowls Fieshish',
         img: image6,
         price:122,
-        id:65
+        id:65,
+        count:1
     },
-    'CupsandMugs6': {
-        name:     'Unique Pieces',
+    'Ceramic Art': {
+        name:     'Ceramic Art',
         img: image7,
         price:787,
-        id:66
+        id:66,
+        count:1
     },
-    'CupsandMugs7': {
-        name:     'Unique Pieces',
+    'Equines 6': {
+        name:     'Equines',
         img: image8,
         price:987,
-        id:67
+        id:67,
+        count:1
     },
-    'CupsandMugs8': {
-        name:     'Unique Pieces',
+    'FLower plate 6': {
+        name:     'FLower plate',
         img: image9,
         price:432,
-        id:68
+        id:68,
+        count:1
     },
-    'CupsandMugs9': {
-        name:     'Unique Pieces',
+    'Bommeyasis 6': {
+        name:     'Bommeyasis',
         img: image10,
         price:234,
-        id:69
+        id:69,
+        count:1
     },
 
 

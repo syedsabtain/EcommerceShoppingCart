@@ -48,10 +48,10 @@ const Platescomp=()=>{
 
                     <div className="col-md-4" key={key}>
            
-                    <div className="card mb-4 shadow-sm cardbody">
-                   
+                    <div className="card mb-4 shadow-lg cardbody">
+                    <Link to={`../${slug}`}>
                         <img src={img} alt="" className='card-img-top cardimage'/>
-               
+                  </Link>
                     <div className="card-body cardbody">
                       <p className="card-text cardtextp d-flex justify-content-between"> {name} <span className=''>Price = {price}$</span> </p>
                 
